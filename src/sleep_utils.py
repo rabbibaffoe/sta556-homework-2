@@ -3,9 +3,9 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_data(path: str | Path) -> pd.DataFrame:
-    """Read the CSV file from a relative path."""
-    return pd.read_csv(path)
+def load_data(path):
+    """Load the Sleep Health and Lifestyle dataset."""
+    return pd.read_csv(path, keep_default_na=False)
 
 
 def clean_columns(data: pd.DataFrame) -> pd.DataFrame:
