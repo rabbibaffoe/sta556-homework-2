@@ -10,7 +10,6 @@ A small, reproducible data-analysis pipeline that reads an external CSV file, cl
 - Local copy: `data/Sleep_health_and_lifestyle_dataset.csv` 
 - Variables used: `Sleep Duration` (hours), `Quality of Sleep` (reported score), `Stress Level` (reported score).
 - Other columns (age, occupation, BMI category, blood pressure, heart rate, daily steps, sleep disorder) are loaded but not analyzed.
-- Check the license and terms on the Kaggle page before redistributing the file. If you cannot redistribute it, download it from the link above and save it at the path shown.
 
 ## Questions
 1. What is the distribution of nightly sleep duration?
