@@ -1,4 +1,4 @@
-# STA 556 Homework 2 — Sleep Health and Lifestyle
+# STA 556 Homework 2
 
 ## Purpose
 A reproducible exploratory analysis of reported sleep duration, sleep quality, and stress levels using a CSV file, modular cleaning functions, and three visualizations.

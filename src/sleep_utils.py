@@ -1,10 +1,10 @@
-"""Reusable data preparation and summary functions for STA 556 Homework 2."""
+"""Reusable data preparation and summary functions"""
 from pathlib import Path
 import pandas as pd
 
 
 def load_data(path: str | Path) -> pd.DataFrame:
-    """Read the supplied CSV file from a relative or absolute path."""
+    """Read the CSV file from a relative path."""
     return pd.read_csv(path)
 
 
