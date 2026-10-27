@@ -3,8 +3,20 @@ from pathlib import Path
 import pandas as pd
 
 
-def load_data(path):
-    """Load the Sleep Health and Lifestyle dataset."""
+def load_data(path: str | Path) -> pd.DataFrame:
+    """
+    Load data from a CSV file.
+
+    Parameters
+    ----------
+    path : str | Path
+        Path to the CSV file.
+
+    Returns
+    -------
+    pd.DataFrame
+        The loaded dataset.
+    """
     return pd.read_csv(path, keep_default_na=False)
 
 
