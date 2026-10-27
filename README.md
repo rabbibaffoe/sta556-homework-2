@@ -1,4 +1,5 @@
-# STA 556 Homework 2: Sleep, Stress, and Sleep Quality
+# STA 556 Homework 2: 
+A Repository for STA556 Homework 2 for Rabbi Baffoe.
 
 ## Purpose
 A small, reproducible data-analysis pipeline that reads an external CSV file, cleans it with reusable functions, answers three exploratory questions, and communicates the results with three saved figures.
@@ -43,15 +44,10 @@ Functions in `src/sleep_utils.py`:
 | `summarize_group(data, group_col, value_col)` | Count, mean and median of a numeric variable by group |
 | `prepare_analysis(data)` | Compose column cleaning and filtering without modifying the input |
 
-## Data cleaning notes
-- All 374 rows pass the validity checks, so none are dropped.
-- The `Sleep Disorder` column uses the text value `None` for people with no recorded disorder (219 rows). pandas' default CSV reader converts `None` to a missing value, so it appears as `NaN` in the notebook. That column is not used in the analysis. Anyone who analyzes it should read the file with `keep_default_na=False` so that `None` stays a valid category.
-- Many rows are identical apart from `Person ID` (242 of 374), which is unusual for survey data. Treat the results as illustrations of the methods and not as estimates for a real population. The sampling design is not documented here.
-- Quality and stress are integer scores with few distinct values, so they are summarized descriptively and no model is fitted.
+## Data Cleaning notes
+- The `Sleep Disorder` column uses the text value `None` for people with no recorded disorder (219 rows). pandas' default CSV reader would convert `None` to a missing value, so `load_data` reads the file with `keep_default_na=False` to keep `None` as a valid category. That column is not used in the analysis.
 
-## Run locally or in GitHub Codespaces
-Requires Python 3.10 or newer (the code uses `str | Path` type hints).
-
+## How to run this project
 1. Open a terminal at the repository root.
 2. Run `python -m pip install -r requirements.txt`.
 3. Run `jupyter notebook notebooks/sleep_analysis.ipynb`, or open the notebook in VS Code.
